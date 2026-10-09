@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio of Utkarsh Goel, an aspiring Data Engineer building SQL data warehouses, ETL pipelines and analytics dashboards.">
+<meta name="author" content="Utkarsh Goel">
+<meta name="theme-color" content="#3b0f10">
+<link rel="icon" type="image/webp" href="/assets/logo.webp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Utkarsh Goel — Data Engineer Portfolio">
+<meta property="og:description" content="SQL data warehousing, ETL and analytics projects, certificates and experience.">
+<meta property="og:image" content="/assets/avatar.webp">
+<title>Utkarsh Goel — Data Engineer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+<symbol id="down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+<symbol id="code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+<symbol id="db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+<symbol id="chart" viewBox="0 0 24 24"><path d="M3 3v18h18M8 17v-5M13 17V8M18 17v-9"/></symbol>
+<symbol id="py" viewBox="0 0 24 24"><path d="M12 3c-4 0-4 1.5-4 3v2h4v1H6c-2 0-3 1.5-3 4s1 4 3 4h2v-3c0-2 1.500-3 3-3h4c1.500 0 2-1 2-2V6c0-2-2-3-5-3zM12 21c4 0 4-1.500 4-3v-2h-4v-1h6c2 0 3-1.500 3-4s-1-4-3-4h-2v3c0 2-1.500 3-3 3H9c-1.500 0-2 1-2 2v4c0 2 2 3 5 3z"/></symbol>
+<symbol id="snow" viewBox="0 0 24 24"><path d="M12 2v20M3.500 7l17 10M3.500 17l17-10M9 4l3 2 3-2M9 20l3-2 3 2"/></symbol>
+<symbol id="cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-8A6 6 0 0 1 18 10.500a3.800 3.800 0 0 1-.5 7.500z"/></symbol>
+<symbol id="bi" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 17v-4M12 17V8M16 17v-6"/></symbol>
+<symbol id="tab" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M6 6v0M18 6v0M6 18v0M18 18v0M12 7v10M7 12h10"/></symbol>
+<symbol id="gh" viewBox="0 0 24 24"><path d="M9 19c-4 1.500-4-2-6-2m12 4v-3.500c0-1 .1-1.400-.5-2 2.800-.3 5.500-1.400 5.500-6a4.600 4.600 0 0 0-1.300-3.200 4.200 4.200 0 0 0-.1-3.200s-1.100-.3-3.500 1.300a12 12 0 0 0-6.200 0C6.500 2.800 5.400 3.100 5.400 3.100a4.200 4.200 0 0 0-.1 3.200A4.600 4.600 0 0 0 4 9.500c0 4.600 2.700 5.700 5.500 6-.6.600-.6 1.200-.5 2V21"/></symbol>
+<symbol id="in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="flow" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/></symbol>
+<symbol id="xl" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></symbol>
+<symbol id="dbt" viewBox="0 0 24 24"><path d="M12 2.500 20.500 7.500v9L12 21.500 3.500 16.500v-9z"/><path d="M8 9.500l4 2.300 4-2.300M12 11.800v5"/></symbol>
+<symbol id="af" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M12 10C11 6 12 3 12 3s3 2 0 7zM14 12c4-1 7 0 7 0s-2 3-7 0zM12 14c1 4 0 7 0 7s-3-2 0-7zM10 12c-4 1-7 0-7 0s2-3 7 0z"/></symbol>
+</defs></svg>
+
+<header class="hero" id="home">
+  <div class="glow"></div>
+  <span class="dust" style="left:22%;top:420px"></span><span class="dust" style="left:36%;top:470px;animation-delay:-3s"></span><span class="dust" style="left:68%;top:440px;animation-delay:-5s"></span><span class="dust" style="left:80%;top:400px;animation-delay:-7s"></span>
+  <div class="cursor-light"></div>
+  <div class="wrap">
+    <nav aria-label="Primary">
+      <a class="logo" href="#home"><img src="/assets/logo.webp" alt="" width="28" height="28"> Utkarsh Goel</a>
+      <div class="links"><a href="#home">Home</a><a href="#about">Who's This</a><a href="#services">Services</a><a href="#journey">Experience</a><a href="#contact">Hit Me Up</a></div>
+      <a class="talk" href="#contact">Let's Talk <svg class="i"><use href="#arrow"/></svg></a>
+    </nav>
+  </div>
+  <div class="hero-title"><small>DATA</small><h1>ENGINEER</h1>
+    <div class="band"><i class="spark"></i></div>
+    <div class="under"><i></i></div>
+    <div class="bins"><pre class="bin l" aria-hidden="true">1
+1.0.0.1.1
+0.0.1
+0.1.0.0.1
+1
+1.0.0.1.0
+0.1.0.1</pre><pre class="bin r" aria-hidden="true">1
+1.0.0.1
+1.0.1.
+0.0.1
+1.0.0.1.0
+%0.0.1.0
+0.0.1.0
+1.0</pre></div>
+  </div>
+  <img class="avatar" src="/assets/avatar.webp" alt="Utkarsh Goel" width="447" height="559">
+  <div class="hero-bot"><div class="wrap">
+    <div><h3>Welcome to My<br>Portfolio</h3><p>Explore my work, skills, and journey toward building reliable data pipelines and warehouses.</p></div>
+    <div class="ctas">
+      <a class="btn" href="/assets/Utkarsh_Goel_Resume.pdf" download="Utkarsh_Goel_Resume.pdf">Download CV <svg class="i"><use href="#down"/></svg></a>
+      <a class="btn dark" href="https://github.com/Utkarshhgoell" target="_blank" rel="noopener">GitHub Profile <svg class="i"><use href="#gh"/></svg></a>
+      <a class="btn dark" href="https://www.linkedin.com/in/utkarshhgoel" target="_blank" rel="noopener">LinkedIn Profile <svg class="i"><use href="#in"/></svg></a>
+    </div>
+  </div></div>
+</header>
+
+<main>
+<section class="about" id="about"><div class="wrap">
+  <div class="row">
+    <div><div class="label">ABOUT ME</div><h2>Discover the Story, Skills, and Purpose <span class="m">Behind the Work You See Here</span></h2></div>
+    <div>
+      <p>I’m a Business Analytics graduate (Galgotias University, 2026) with a genuine interest in turning raw, messy data into something structured and useful. I enjoy the full lifecycle of data — from pipelines and warehousing to dashboards that actually help someone make a decision.</p>
+      <p>I believe consistency, attention to detail, and continuous learning matter more than credentials when you’re just starting out. I continue sharpening my skills through self-driven projects rather than waiting for a job to teach me.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="big"><div class="wrap">
+  <h2>The curious mind building toward <span class="m">the future of data engineering</span></h2>
+  <div class="stats">
+    <div>
+      <div class="stat"><b>3</b><span>Projects Built</span><p>A SQL Server data warehouse, a live client website, and a marketplace concept, plus four job simulations.</p></div>
+      <div class="stat"><b>4</b><span>Job Simulations Completed</span><p>Tata (2), Deloitte and Accenture via Forage, covering analytics, dashboards and strategy. Simulations, not internships.</p></div>
+    </div>
+    <div class="photo show" id="show" role="group" aria-roledescription="carousel" aria-label="SQL Medallion Data Warehouse project slideshow">
+      <img class="sl on" src="/assets/slides/slide-01.webp" alt="Title slide: Building a Modern SQL Data Warehouse from Scratch" width="1280" height="719" draggable="false">
+      <img class="slNone" src="/assets/slides/slide-02.webp" alt="The problem: disconnected CRM and ERP systems" width="1280" height="719" draggable="false">
+      <img class="slNone" src="/assets/slides/slide-03.webp" alt="The Medallion data architecture: Bronze, Silver and Gold layers" width="1280" height="719" draggable="false">
+      <img class="slNone" src="/assets/slides/slide-04.webp" alt="Layer 1, the Bronze layer: raw bulk ingestion from CSV" width="1280" height="719" draggable="false">
+      <img class="slNone" src="/assets/slides/slide-05.webp" alt="Layer 2, the Silver layer: cleaning and standardizing data" width="1280" height="719" draggable="false">
+      <img class="slNone" src="/assets/slides/slide-06.webp" alt="Layer 3, the Gold layer: star schema with fact and dimension tables" width="1280" height="719" draggable="false">
+      <img class="slNone" src="/assets/slides/slide-07.webp" alt="Built for reliability: integrity, null and duplicate checks" width="1280" height="719" draggable="false">
+      <img class="slNone" src="/assets/slides/slide-08.webp" alt="Explore the code: project folder structure" width="1280" height="719" draggable="false">
+      <div class="dots" role="group" aria-label="Choose slide"></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="tools"><div class="wrap">
+  <div class="head2">
+    <div><div class="label">TOOLS</div><h2>A Curated Set of <span class="m">Tools and Technologies Mastered</span> to Build Reliable Data Solutions</h2></div>
+    <p>The stack I use for warehousing, pipelines and reporting. Snowflake, AWS S3, dbt and Airflow are in active learning and not yet production-proven.</p>
+  </div>
+  <div class="tgrid">
+    <div class="tool"><svg class="i"><use href="#db"/></svg>SQL Server<small>Intermediate</small></div>
+    <div class="tool"><svg class="i"><use href="#py"/></svg>Python<small>Intermediate</small></div>
+    <div class="tool"><svg class="i"><use href="#xl"/></svg>Excel<small>Advanced</small></div>
+    <div class="tool"><svg class="i"><use href="#snow"/></svg>Snowflake<small>Learning</small></div>
+    <div class="tool"><svg class="i"><use href="#cloud"/></svg>AWS S3<small>Learning</small></div>
+    <div class="tool"><svg class="i"><use href="#dbt"/></svg>dbt<small>Learning</small></div>
+    <div class="tool"><svg class="i"><use href="#af"/></svg>Apache Airflow<small>Learning</small></div>
+    <div class="tool"><svg class="i"><use href="#tab"/></svg>Tableau<small>Intermediate</small></div>
+    <div class="tool"><svg class="i"><use href="#bi"/></svg>Power BI<small>Intermediate</small></div>
+    <div class="tool"><svg class="i"><use href="#gh"/></svg>GitHub<small>Version control</small></div>
+  </div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+  <div class="label">SERVICES</div>
+  <div class="head2">
+    <h2>Presenting the Professional Services and Unique Value I Offer to Help You Achieve Your Goals</h2>
+    <p>Presenting the services I offer, from data warehouse design to dashboards and web delivery.</p>
+    <a class="btn" href="#contact">Explore More <svg class="i"><use href="#arrow"/></svg></a>
+  </div>
+  <div class="cards">
+    <article class="card"><svg class="i"><use href="#flow"/></svg><div><h4>Data Warehousing &amp; ETL</h4><p>Medallion-style layers, star-schema modeling and data quality checks in SQL.</p></div><a class="go" href="#projects" aria-label="See warehouse project"><svg class="i"><use href="#arrow"/></svg></a></article>
+    <article class="card"><svg class="i"><use href="#chart"/></svg><div><h4>Analytics &amp; Dashboards</h4><p>Excel, Tableau and Power BI dashboards, data cleaning and clear business reporting.</p></div><a class="go" href="#projects" aria-label="See dashboards"><svg class="i"><use href="#arrow"/></svg></a></article>
+    <article class="card"><svg class="i"><use href="#code"/></svg><div><h4>Web Development</h4><p>Full-stack sites for clients: design, forms, hosting, domain setup and on-page SEO.</p></div><a class="go" href="#projects" aria-label="See website project"><svg class="i"><use href="#arrow"/></svg></a></article>
+  </div>
+  <div class="scroll" aria-hidden="true"><span>SCROLL TO BOTTOM</span><i>↓</i></div>
+</div></section>
+
+<section class="journey" id="journey"><div class="wrap">
+  <div class="head2">
+    <div><div class="label">CAREER JOURNEY</div><h2>A Journey Built Through Projects, Simulations, <span class="m">and Hands-On Learning — Not Years, But Real Work</span></h2></div>
+    <p>As a graduate just starting out, my experience comes from self-driven projects and industry simulations rather than a long employment history. Here’s how it’s shaped up so far.</p>
+  </div>
+  <div class="item"><div class="n">01</div><div><h4>Started BBA in Business Analytics — Galgotias University</h4><p>Building a foundation in SQL, data modeling, and business analysis.</p></div><div class="y">2022–2026</div></div>
+  <div class="item"><div class="n">02</div><div><h4>Freelance Coordination Work — WedField &amp; Yasho Bhoomi</h4><p>Managed cross-functional teams of 8–10+ people, sharpening stakeholder communication and planning under real deadlines.</p></div><div class="y">2024</div></div>
+  <div class="item"><div class="n">03</div><div><h4>Industry Job Simulations — Tata, Deloitte, Accenture (via Forage)</h4><p>Practiced real-world data analysis, EDA, dashboarding, and strategy consulting tasks set by these companies.</p></div><div class="y">2025</div></div>
+  <div class="item"><div class="n">04</div><div><h4>Built My Own Data Warehouse Project — Personal Project</h4><p>Designed an end-to-end SQL data warehouse using Medallion Architecture, from raw ingestion to analytics-ready tables.</p></div><div class="y">2025–2026</div></div>
+  <div class="item"><div class="n">05</div><div><h4>Designed &amp; Deployed a Live Client Website — Claritus Elite Advocate &amp; Solicitors</h4><p>Took a project from concept to production independently — front end, back end, database, domain, and SEO.</p></div><div class="y">2026</div></div>
+</div></section>
+
+<section class="projects" id="projects"><div class="wrap">
+  <div class="head2">
+    <div><div class="label">SHOWCASE PROJECTS</div><h2>A Selection of Projects That Showcase My Experience in <span class="m">Data Engineering</span></h2></div>
+    <p>Three projects, each labeled for what it is: a personal data warehouse, a live client website and an app concept.</p>
+  </div>
+  <div class="pgrid">
+    <a class="proj" style="--g:linear-gradient(135deg,#1f3a5f,#0d1b2e)" href="https://github.com/Utkarshhgoell/sql-data-warehouse-project" target="_blank" rel="noopener"><em>Personal project</em><b>SQL Data Warehouse</b><span>SQL Server · Medallion architecture · Star schema</span><i class="go"><svg class="i"><use href="#arrow"/></svg></i></a>
+    <a class="proj" style="--g:linear-gradient(135deg,#6b4a2b,#2b1b10)" href="https://www.clarituselitepartners.in" target="_blank" rel="noopener"><em>Freelance · Live</em><b>Claritus Law Firm Website</b><span>Full-stack · Custom domain · SEO · Email routing</span><i class="go"><svg class="i"><use href="#arrow"/></svg></i></a>
+    <a class="proj" style="--g:linear-gradient(135deg,#7a2e4a,#2d1220)" href="#contact"><em>Concept only</em><b>Event Volunteer Marketplace</b><span>Two-sided app idea for organizers and student volunteers</span><i class="go"><svg class="i"><use href="#arrow"/></svg></i></a>
+  </div>
+</div></section>
+
+<section class="certs" id="certificates"><div class="wrap">
+  <div class="head2">
+    <div><div class="label">CERTIFICATES &amp; LICENSES</div><h2>Credentials Earned Through <span class="m">Simulations, Cloud Training and Skill Tests</span></h2></div>
+    <p>Eight certificates covering data analytics, cloud and Excel. Select any card to view the full certificate.</p>
+  </div>
+  <div class="cgrid">
+    <button type="button" class="cert" data-title="Data Visualisation Simulation by Tata"><span class="thumb"><img src="/assets/certificates/01-tata-data-visualisation.webp" alt="Certificate: Data Visualisation Simulation by Tata" loading="lazy" draggable="false"></span><b>Data Visualisation Simulation by Tata</b></button>
+    <button type="button" class="cert" data-title="Strategy Consulting Simulation by Accenture"><span class="thumb"><img src="/assets/certificates/02-accenture-strategy-consulting.webp" alt="Certificate: Strategy Consulting Simulation by Accenture" loading="lazy" draggable="false"></span><b>Strategy Consulting Simulation by Accenture</b></button>
+    <button type="button" class="cert" data-title="Data Analytics Simulation by Deloitte"><span class="thumb"><img src="/assets/certificates/03-deloitte-data-analytics.webp" alt="Certificate: Data Analytics Simulation by Deloitte" loading="lazy" draggable="false"></span><b>Data Analytics Simulation by Deloitte</b></button>
+    <button type="button" class="cert" data-title="GenAI Data Analytics Simulation by Tata"><span class="thumb"><img src="/assets/certificates/04-tata-genai-data-analytics.webp" alt="Certificate: GenAI Data Analytics Simulation by Tata" loading="lazy" draggable="false"></span><b>GenAI Data Analytics Simulation by Tata</b></button>
+    <button type="button" class="cert" data-title="AWS Educate — Emerging Talent Community"><span class="thumb"><img src="/assets/certificates/05-aws-educate-emerging-talent.webp" alt="Certificate: AWS Educate — Emerging Talent Community" loading="lazy" draggable="false"></span><b>AWS Educate — Emerging Talent Community</b></button>
+    <button type="button" class="cert" data-title="Cloud Computing Essentials by AWS"><span class="thumb"><img src="/assets/certificates/06-aws-cloud-computing-essentials.webp" alt="Certificate: Cloud Computing Essentials by AWS" loading="lazy" draggable="false"></span><b>Cloud Computing Essentials by AWS</b></button>
+    <button type="button" class="cert" data-title="Data Analyst Certification by OneRoadmap"><span class="thumb"><img src="/assets/certificates/07-oneroadmap-data-analyst.webp" alt="Certificate: Data Analyst Certification by OneRoadmap" loading="lazy" draggable="false"></span><b>Data Analyst Certification by OneRoadmap</b></button>
+    <button type="button" class="cert" data-title="Excel: Beginner to Advanced by Udemy"><span class="thumb"><img src="/assets/certificates/08-udemy-excel-beginner-to-advanced.webp" alt="Certificate: Excel: Beginner to Advanced by Udemy" loading="lazy" draggable="false"></span><b>Excel: Beginner to Advanced by Udemy</b></button>
+  </div>
+</div></section>
+<dialog id="certbox" aria-label="Certificate viewer"><button type="button" class="x" aria-label="Close">×</button><img alt=""><p></p></dialog>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Get in Touch to Start a Collaboration <span class="m" style="color:var(--text)">After Exploring My Work and Expertise</span></h2>
+  <form id="cf">
+    <div class="f3">
+      <label>Name: *<input name="name" required></label>
+      <label>Email: *<input type="email" name="email" required></label>
+      <label>Subject: *<input name="subject" required></label>
+    </div>
+    <label>Your Message: *<textarea name="msg" required></textarea></label>
+    <div class="chips" role="group" aria-label="Topics">
+      <label><input type="checkbox" value="Data Engineering"><span>Data Engineering</span></label>
+      <label><input type="checkbox" value="Data Warehouse"><span>Data Warehouse</span></label>
+      <label><input type="checkbox" value="Dashboards"><span>Dashboards</span></label>
+      <label><input type="checkbox" value="SQL"><span>SQL</span></label>
+      <label><input type="checkbox" value="Web Development"><span>Web Development</span></label>
+      <label><input type="checkbox" value="Full-time Role"><span>Full-time Role</span></label>
+    </div>
+    <div class="send"><button class="btn" type="submit">Send Me <svg class="i"><use href="#arrow"/></svg></button><span>* Your message opens in your email app and I reply promptly</span></div>
+  </form>
+</div></section>
+</main>
+
+<div class="marq" aria-hidden="true"><div>
+  <span>CLEAN PIPELINES</span><span>✦</span><span>CLEAN PIPELINES</span><span>✦</span><span>CLEAN PIPELINES</span><span>✦</span><span>CLEAN PIPELINES</span><span>✦</span><span>CLEAN PIPELINES</span><span>✦</span><span>CLEAN PIPELINES</span><span>✦</span><span>CLEAN PIPELINES</span><span>✦</span><span>CLEAN PIPELINES</span><span>✦</span>
+</div></div>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><h5>Quick Links</h5><ul><li><a href="#about">Who's This</a></li><li><a href="#services">Services</a></li><li><a href="#journey">Experience</a></li><li><a href="#contact">Hit Me Up</a></li></ul></div>
+    <div><h5>Data Engineer</h5><p>Fresher · Ready to join in 15 days</p><h5 style="margin-top:18px">Based in Greater Noida, India</h5><p>Open to Delhi NCR</p>
+      <div class="soc"><a href="https://github.com/Utkarshhgoell" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#gh"/></svg></a><a href="https://www.linkedin.com/in/utkarshhgoel" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#in"/></svg></a><a href="mailto:info.utkarshhgoel@gmail.com" aria-label="Email"><svg class="i"><use href="#mail"/></svg></a></div></div>
+    <div><h5>Email Address</h5><p>info.utkarshhgoel@gmail.com</p><a class="btn" style="margin-top:18px" href="#contact">Hire Me <svg class="i"><use href="#arrow"/></svg></a></div>
+  </div>
+  <div class="copy"><span>© 2026 Utkarsh Goel</span><span>All rights reserved</span></div>
+</div></footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
