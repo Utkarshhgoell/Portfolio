@@ -1,0 +1,15 @@
+{
+  "name": "utkarsh-goel-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal portfolio of Utkarsh Goel, an aspiring Data Engineer.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
