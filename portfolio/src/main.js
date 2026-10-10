@@ -1,14 +1,69 @@
 import './style.css'
 
-const EMAIL = 'info.utkarshhgoel@gmail.com'
+// Contact form: sends through Web3Forms (https://web3forms.com).
+// The access key is public by design. It only lets the form deliver to the inbox it was created for.
+const WEB3FORMS_KEY = '6a63b83d-e225-491d-9f10-66c21eeb1706'
+const TO_EMAIL = 'info.utkarshhgoel@gmail.com'
 
-// Contact form: opens the visitor's email app with the message pre-filled.
-document.getElementById('cf').addEventListener('submit', (e) => {
+const form = document.getElementById('cf')
+const statusEl = document.getElementById('cstatus')
+const sendBtn = document.getElementById('csend')
+const done = document.getElementById('cdone')
+const gmail = document.getElementById('gmail')
+
+// "Or open in Gmail" opens a pre-filled Gmail compose tab with whatever is typed so far.
+function updateGmailLink() {
+  const q = new URLSearchParams({
+    view: 'cm', fs: '1', to: TO_EMAIL,
+    su: form.elements.subject.value,
+    body: `${form.elements.message.value}\n\n${form.elements.name.value}`.trim(),
+  })
+  gmail.href = `https://mail.google.com/mail/?${q}`
+}
+gmail.addEventListener('focus', updateGmailLink)
+gmail.addEventListener('mouseenter', updateGmailLink)
+gmail.addEventListener('touchstart', updateGmailLink, { passive: true })
+
+form.addEventListener('submit', async (e) => {
   e.preventDefault()
-  const f = e.target
-  const topics = [...f.querySelectorAll('.chips input:checked')].map((i) => i.value).join(', ')
-  const body = `Name: ${f.name.value}\nEmail: ${f.email.value}${topics ? `\nTopics: ${topics}` : ''}\n\n${f.msg.value}`
-  window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(f.subject.value)}&body=${encodeURIComponent(body)}`
+  statusEl.textContent = ''
+  if (!form.checkValidity()) { form.reportValidity(); return }
+  if (form.elements.botcheck.checked) return // spam trap
+
+  sendBtn.disabled = true
+  sendBtn.firstElementChild.textContent = 'Sending…'
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: form.elements.subject.value,
+        from_name: form.elements.name.value,
+        name: form.elements.name.value,
+        email: form.elements.email.value,
+        message: form.elements.message.value,
+        botcheck: '',
+      }),
+    })
+    const data = await res.json().catch(() => ({}))
+    if (!res.ok || !data.success) throw new Error(data.message || 'Request failed')
+    form.hidden = true
+    done.hidden = false
+    done.focus()
+    form.reset()
+  } catch {
+    statusEl.textContent = 'Your message could not be sent. Check your connection and try again, or use "Or open in Gmail".'
+  } finally {
+    sendBtn.disabled = false
+    sendBtn.firstElementChild.textContent = 'Send Me'
+  }
+})
+
+document.getElementById('again').addEventListener('click', () => {
+  done.hidden = true
+  form.hidden = false
+  form.elements.name.focus()
 })
 
 var hero=document.getElementById('home');

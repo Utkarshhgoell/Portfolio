@@ -187,23 +187,36 @@
 
 <section class="contact" id="contact"><div class="wrap">
   <h2>Get in Touch to Start a Collaboration <span class="m" style="color:var(--text)">After Exploring My Work and Expertise</span></h2>
-  <form id="cf">
-    <div class="f3">
-      <label>Name: *<input name="name" required></label>
-      <label>Email: *<input type="email" name="email" required></label>
-      <label>Subject: *<input name="subject" required></label>
+  <p class="csub">Write your message below. It reaches my inbox directly, with no email app needed.</p>
+  <form id="cf" class="compose" novalidate>
+    <div class="cbar" aria-hidden="true"><span>New Message</span><span class="cic"><span>–</span><span>⤢</span><span>✕</span></span></div>
+    <div class="crow"><span class="ck" id="k-from">From</span>
+      <div class="cv csplit" role="group" aria-labelledby="k-from">
+        <input name="name" placeholder="Your name *" aria-label="Your name" autocomplete="name" required>
+        <input type="email" name="email" placeholder="Your email address *" aria-label="Your email address" autocomplete="email" required>
+      </div></div>
+    <div class="crow"><span class="ck">To</span>
+      <div class="cv"><span class="cchip"><i aria-hidden="true">UG</i>Utkarsh Goel <small>&lt;info.utkarshhgoel@gmail.com&gt;</small></span><span class="clock">Pre-filled</span></div></div>
+    <div class="crow"><label class="ck" for="f-subject">Subject</label>
+      <div class="cv"><input id="f-subject" name="subject" placeholder="What is this about? *" required></div></div>
+    <div class="cbody">
+      <label for="f-msg" class="cgreet">Hi Utkarsh,</label>
+      <textarea id="f-msg" name="message" placeholder="Write your message here…" required></textarea>
     </div>
-    <label>Your Message: *<textarea name="msg" required></textarea></label>
-    <div class="chips" role="group" aria-label="Topics">
-      <label><input type="checkbox" value="Data Engineering"><span>Data Engineering</span></label>
-      <label><input type="checkbox" value="Data Warehouse"><span>Data Warehouse</span></label>
-      <label><input type="checkbox" value="Dashboards"><span>Dashboards</span></label>
-      <label><input type="checkbox" value="SQL"><span>SQL</span></label>
-      <label><input type="checkbox" value="Web Development"><span>Web Development</span></label>
-      <label><input type="checkbox" value="Full-time Role"><span>Full-time Role</span></label>
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p class="cstatus" id="cstatus" role="status" aria-live="polite"></p>
+    <div class="cfoot">
+      <button class="csend" type="submit" id="csend"><span>Send Me</span> <svg class="i"><use href="#arrow"/></svg></button>
+      <span class="cnote">Your message goes straight to my inbox.<br>I reply to the email address above.</span>
+      <a class="calt" id="gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=info.utkarshhgoel@gmail.com" target="_blank" rel="noopener">Or open in Gmail</a>
     </div>
-    <div class="send"><button class="btn" type="submit">Send Me <svg class="i"><use href="#arrow"/></svg></button><span>* Your message opens in your email app and I reply promptly</span></div>
   </form>
+  <div class="cdone" id="cdone" hidden tabindex="-1">
+    <svg class="i" aria-hidden="true"><use href="#mail"/></svg>
+    <h3>Message sent</h3>
+    <p>Thanks for reaching out. I'll reply to the email address you gave soon.</p>
+    <button type="button" class="calt" id="again">Send another message</button>
+  </div>
 </div></section>
 </main>
 
